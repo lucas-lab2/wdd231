@@ -1,0 +1,41 @@
+/* larger.css - Styles for larger screens */
+
+@media (min-width: 768px) {
+    header, nav, main, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #menu-button {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+
+    nav {
+        background-color: #333;
+    }
+
+    #nav-menu {
+        display: flex !important; /* Override inline styles from JS */
+        justify-content: flex-start;
+    }
+
+    #nav-menu li {
+        flex-grow: 0;
+    }
+
+    #nav-menu li a {
+        padding: 1rem 1.5rem;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+    
+    #course-cards-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}

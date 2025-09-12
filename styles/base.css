@@ -1,0 +1,184 @@
+/* base.css - Mobile First Styles */
+
+:root {
+    --primary-color: #003366; /* Dark Blue */
+    --secondary-color: #f4f4f4; /* Light Gray */
+    --accent-color: #007BFF; /* Bright Blue */
+    --text-color: #333333;
+    --card-bg-color: #ffffff;
+    --completed-card-bg: #e6f4ea;
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #333;
+}
+
+#nav-menu {
+    list-style-type: none;
+    display: none; /* Hidden by default */
+}
+
+#nav-menu.open {
+    display: block; /* Shown when toggled by JS */
+}
+
+#nav-menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+#nav-menu li a:hover {
+    background-color: #555;
+}
+
+#nav-menu li a.active {
+    background-color: var(--accent-color);
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.student-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.course-filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.course-filters button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background-color: #e9e9e9;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.course-filters button:hover {
+    background-color: #ddd;
+}
+
+.course-filters button.active-filter {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+#course-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.75rem;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.course-card.completed {
+    background-color: var(--completed-card-bg);
+    border-left: 5px solid #28a745;
+}
+
+.credit-total {
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+    color: #555;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 0.5rem;
+    filter: invert(1);
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+#last-modified {
+    color: #ccc;
+    font-size: 0.9rem;
+}
