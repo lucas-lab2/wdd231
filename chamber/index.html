@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce | Welcome</title>
+    <meta name="description" content="Welcome to the Timbuktu Chamber of Commerce. Your gateway to business, community, and economic growth in Timbuktu.">
+    <meta name="author" content="Lucas Miranda">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lucas-lab2.github.io/wdd231/chamber/images/hero-social.webp">
+    <meta property="og:url" content="https://lucas-lab2.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Your gateway to business and community in Timbuktu. Join, discover, and connect with local enterprises.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.webp" alt="Timbuktu Chamber Logo" class="logo">
+            <div class="site-name">Timbuktu Chamber of Commerce</div>
+            <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero">
+            <img src="images/hero-image.webp" alt="Scenic view of Timbuktu at sunset">
+            <div class="cta-container">
+                <a class="cta-button" href="join.html">Join the Chamber!</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <section class="events-card">
+                <h2>Current Events</h2>
+                <p><strong>Weekly Business Mixer:</strong> Join us this Wednesday at 6 PM at the Ancient Scrolls Library Cafe for networking and collaboration.</p>
+                <p><strong>Tech Innovators Summit:</strong> Coming next month! Stay tuned for details on speakers and registration.</p>
+            </section>
+
+            <section class="weather-card">
+                <h2>Weather in Timbuktu</h2>
+                <div class="current-weather">
+                    <img id="weather-icon" src="" alt="Current weather icon">
+                    <p><span id="current-temp">--</span>°C, <span id="weather-desc">Loading...</span></p>
+                </div>
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-container">
+                    </div>
+            </section>
+        </div>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container" class="spotlights-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Timbuktu Chamber of Commerce</strong></p>
+                <p>10 Rue De La Paix, Timbuktu, Mali</p>
+                <p>info@timbuktucc.org | (223) 555-2300</p>
+            </div>
+            <div class="developer-info">
+                <p>&copy; <span id="current-year"></span> | Lucas Miranda | WDD 231</p>
+                <p id="last-modified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
