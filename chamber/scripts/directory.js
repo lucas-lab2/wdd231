@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             displayMembers(data.members);
         } catch (error) {
             console.error('Error fetching member data:', error);
-            membersContainer.innerHTML = '<p>Sorry, member data could not be loaded.</p>';
+            membersContainer.innerHTML = '<p>Sorry, member data could not be loaded at this time.</p>';
         }
     }
 
@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         members.forEach(member => {
             const memberCard = document.createElement('section');
             
-            // Create elements for the card
             const name = document.createElement('h3');
             name.textContent = member.name;
 
@@ -59,14 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const website = document.createElement('a');
             website.href = member.websiteURL;
             website.textContent = 'Visit Website';
-            website.target = '_blank'; // Open in new tab
+            website.target = '_blank';
+            website.rel = 'noopener noreferrer';
 
             const image = document.createElement('img');
             image.src = member.image;
             image.alt = `${member.name} Logo`;
-            image.loading = 'lazy'; // Lazy load images for performance
-            image.width = 150; // Set explicit width
-            image.height = 100; // Set explicit height
+            image.loading = 'lazy';
+            image.width = 150;
+            image.height = 100;
 
             const level = document.createElement('p');
             level.textContent = `Membership: ${member.membershipLevel}`;
@@ -76,16 +76,15 @@ document.addEventListener('DOMContentLoaded', () => {
             memberCard.appendChild(name);
             memberCard.appendChild(address);
             memberCard.appendChild(phone);
-            memberCard.appendChild(level);
             memberCard.appendChild(website);
+            memberCard.appendChild(level);
 
-            // Append card to the container
             membersContainer.appendChild(memberCard);
         });
     }
 
     // Event listeners for view toggles
-    if (gridViewButton && listViewButton) {
+    if (gridViewButton && listViewButton && membersContainer) {
         gridViewButton.addEventListener('click', () => {
             membersContainer.classList.add('grid');
             membersContainer.classList.remove('list');
@@ -101,6 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Initial fetch of members
-    getMembers();
+    // Initial fetch of members if on the directory page
+    if (membersContainer) {
+        getMembers();
+    }
 });
