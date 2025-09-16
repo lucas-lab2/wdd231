@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Timbuktu Digital Solutions",
+      "address": "123 Sahara Ave, Timbuktu, Mali",
+      "phone": "(223) 555-0101",
+      "websiteURL": "https://www.timbuktudigital.com",
+      "image": "images/tds.webp",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Mali Market Goods",
+      "address": "456 Oasis Rd, Timbuktu, Mali",
+      "phone": "(223) 555-0102",
+      "websiteURL": "https://www.malimarket.com",
+      "image": "images/mmg.webp",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Desert Camel Tours",
+      "address": "789 Dune St, Timbuktu, Mali",
+      "phone": "(223) 555-0103",
+      "websiteURL": "https://www.desertcameltours.com",
+      "image": "images/dct.webp",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "River Niger Shipping",
+      "address": "101 River Port, Timbuktu, Mali",
+      "phone": "(223) 555-0104",
+      "websiteURL": "https://www.rivernigershipping.com",
+      "image": "images/rns.webp",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Sahel Artisans Collective",
+      "address": "212 Craftsman Ct, Timbuktu, Mali",
+      "phone": "(223) 555-0105",
+      "websiteURL": "https://www.sahelartisans.com",
+      "image": "images/sac.webp",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Timbuktu Tech Innovators",
+      "address": "333 Innovation Blvd, Timbuktu, Mali",
+      "phone": "(223) 555-0106",
+      "websiteURL": "https://www.timbuktutech.com",
+      "image": "images/tti.webp",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Ancient Scrolls Library Cafe",
+      "address": "444 Manuscript Way, Timbuktu, Mali",
+      "phone": "(223) 555-0107",
+      "websiteURL": "https://www.scrollscafe.com",
+      "image": "images/aslc.webp",
+      "membershipLevel": "Non-Profit"
+    }
+  ]
+}

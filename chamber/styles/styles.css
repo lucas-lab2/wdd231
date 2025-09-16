@@ -1,0 +1,213 @@
+/* Import Google Fonts (Example: Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* --- Root Variables --- */
+:root {
+    --primary-color: #003366; /* Deep Blue */
+    --secondary-color: #f0ad4e; /* Sandy Gold */
+    --background-color: #f4f4f4; /* Light Gray */
+    --text-color: #333333;
+    --card-background: #ffffff;
+    --footer-background: #002244;
+    --light-text-color: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* --- Base Styles --- */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+#menu-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--light-text-color);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hidden by default on mobile */
+    flex-direction: column;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--light-text-color);
+    text-decoration: none;
+    padding: 0.8rem 0;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* --- Main Content --- */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.directory-main h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.view-toggle {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.view-toggle button.active {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+
+/* --- Members Container --- */
+#members-container {
+    transition: all 0.5s ease-in-out;
+}
+
+/* --- Grid View Styles --- */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.grid section {
+    background-color: var(--card-background);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.grid img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.grid h3 {
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+/* --- List View Styles --- */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    align-items: center;
+    padding: 0.75rem;
+    background-color: var(--card-background);
+    border-bottom: 1px solid #ddd;
+}
+
+.list section:nth-child(odd) {
+    background-color: #e9f1f6;
+}
+
+.list img {
+    display: none; /* Images are hidden in list view */
+}
+
+.list h3, .list p, .list a {
+    margin: 0;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+.list a {
+    word-break: break-all;
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: var(--footer-background);
+    color: var(--light-text-color);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* --- Media Query for Larger Screens --- */
+@media (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .list section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .list h3 { font-weight: bold; }
+    .list p, .list a { font-size: 1rem; }
+}
