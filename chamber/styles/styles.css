@@ -26,6 +26,12 @@ body {
     margin: 0;
 }
 
+.site-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
