@@ -4,18 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attributions - PetPledge Hub</title>
+    <meta name="description" content="Source attributions for content and images used on PetPledge Hub.">
+    <meta name="author" content="Your Name Here">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <script src="scripts/main.js" type="module" defer></script>
 </head>
 <body>
-    <h1>Attributions</h1>
-    <h2>Content</h2>
-    <p>All textual content was created specifically for this fictional project.</p>
-    <h2>Images</h2>
-    <p>All images of pets were sourced from Pexels and Unsplash. These images are free to use.</p>
-    <ul>
-        <li>Image of [Pet Name]: by [Photographer Name] on Pexels/Unsplash</li>
-        <li>Image of [Pet Name]: by [Photographer Name] on Pexels/Unsplash</li>
-        </ul>
-    <h2>Icons</h2>
-    <p>Favicon created by [Your Name]. Hamburger icon SVG from [Source, e.g., an icon library].</p>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/favicon.svg" alt="PetPledge Hub Logo">
+            <h1>PetPledge Hub</h1>
+        </a>
+        <div class="header-controls">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="pets.html">Pets</a>
+                <a href="donate.html">Donate</a>
+            </nav>
+            <button id="theme-toggle-button" aria-label="Toggle Dark Mode"></button>
+        </div>
+        <button id="menu-button" aria-label="Open Navigation Menu"></button>
+    </header>
+
+    <main class="attributions-content">
+        <section class="page-intro">
+            <h2>Attributions</h2>
+            <p>This page acknowledges the sources of the content used on this website.</p>
+        </section>
+        <section>
+            <h3>Content</h3>
+            <p>All textual content was created specifically for this fictional project.</p>
+        </section>
+        <section>
+            <h3>Images</h3>
+            <p>All images of pets were sourced from Pexels and Unsplash, which provide royalty-free photos. Please add specific links here as you source your images.</p>
+            <ul>
+                <li>Image of [Pet Name]: by [Photographer Name] on Pexels/Unsplash</li>
+                <li>Image of [Pet Name]: by [Photographer Name] on Pexels/Unsplash</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Icons</h3>
+            <p>Favicon and theme toggle icons (sun, moon) were created for this project using SVG.</p>
+            <p>The hamburger menu icon is an SVG, adapted from common open-source icon sets.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> PetPledge Hub</p>
+        <p>Your Name Here | WDD 231 Final Project</p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p><a href="https://link-to-your-video.com" target="_blank">Project Video</a></p>
+    </footer>
 </body>
 </html>

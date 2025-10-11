@@ -6,18 +6,10 @@
     <title>PetPledge Hub: Donate to Pets in Need</title>
     <meta name="description" content="Welcome to PetPledge Hub, the central platform for donating to abandoned pets and supporting non-profit animal welfare organizations.">
     <meta name="author" content="Your Name Here">
-
-    <meta property="og:title" content="PetPledge Hub">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
-    <meta property="og:url" content="https://yourdomain.com/index.html">
-    <meta property="og:description" content="Support abandoned pets through direct donations of funds and supplies. See the impact of your contribution.">
-
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/components.css">
-
     <script src="scripts/main.js" type="module" defer></script>
 </head>
 <body>
@@ -26,12 +18,15 @@
             <img src="images/favicon.svg" alt="PetPledge Hub Logo">
             <h1>PetPledge Hub</h1>
         </a>
+        <div class="header-controls">
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="pets.html">Pets</a>
+                <a href="donate.html">Donate</a>
+            </nav>
+            <button id="theme-toggle-button" aria-label="Toggle Dark Mode"></button>
+        </div>
         <button id="menu-button" aria-label="Open Navigation Menu"></button>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="pets.html">Pets</a>
-            <a href="donate.html">Donate</a>
-        </nav>
     </header>
 
     <main>
@@ -42,29 +37,17 @@
                 <a href="pets.html" class="cta-button">Meet the Pets</a>
             </div>
         </section>
-
         <section class="how-it-works">
             <h2>How It Works</h2>
             <div class="steps">
-                <div class="step">
-                    <h3>1. Find a Friend</h3>
-                    <p>Browse profiles of adorable pets from various shelters who are waiting for your support.</p>
-                </div>
-                <div class="step">
-                    <h3>2. Pledge Your Support</h3>
-                    <p>Choose to donate funds securely or contribute essential supplies from their wishlist.</p>
-                </div>
-                <div class="step">
-                    <h3>3. See Your Impact</h3>
-                    <p>Receive updates and see exactly how your generosity helps them thrive.</p>
-                </div>
+                <div class="step"><h3>1. Find a Friend</h3><p>Browse profiles of adorable pets from various shelters who are waiting for your support.</p></div>
+                <div class="step"><h3>2. Pledge Your Support</h3><p>Choose to donate funds securely or contribute essential supplies from their wishlist.</p></div>
+                <div class="step"><h3>3. See Your Impact</h3><p>Receive updates and see exactly how your generosity helps them thrive.</p></div>
             </div>
         </section>
-
         <section class="featured-pets">
             <h2>Featured Friends</h2>
-            <div id="featured-pets-grid" class="pet-grid">
-                </div>
+            <div id="featured-pets-grid" class="pet-grid"></div>
         </section>
     </main>
 
@@ -73,10 +56,6 @@
         <p>Your Name Here | WDD 231 Final Project</p>
         <p><a href="attributions.html">Attributions</a></p>
         <p><a href="https://link-to-your-video.com" target="_blank">Project Video</a></p>
-        <div class="theme-switcher">
-            <label for="theme-toggle">Dark Mode</label>
-            <input type="checkbox" id="theme-toggle">
-        </div>
     </footer>
 </body>
 </html>
