@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Pets - PetPledge Hub</title>
+    <meta name="description" content="Browse profiles of all adoptable and supportable pets. Filter by species and find a friend to support today.">
+    <meta name="author" content="Your Name Here">
+
+    <meta property="og:title" content="Meet the Pets - PetPledge Hub">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+    <meta property="og:url" content="https://yourdomain.com/pets.html">
+    <meta property="og:description" content="Browse profiles of all adoptable and supportable pets.">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
+
+    <script src="scripts/main.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/favicon.svg" alt="PetPledge Hub Logo">
+            <h1>PetPledge Hub</h1>
+        </a>
+        <button id="menu-button" aria-label="Open Navigation Menu"></button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pets.html" class="active">Pets</a>
+            <a href="donate.html">Donate</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h2>Find Your Friend</h2>
+            <p>Here are all the wonderful animals currently seeking support. Click on any pet to learn more about their story.</p>
+        </section>
+        
+        <div id="pet-gallery">
+            <div class="filter-controls">
+                <label for="filter">Filter by:</label>
+                <select id="filter" name="filter">
+                    <option value="all">All Pets</option>
+                    <option value="dog">Dogs</option>
+                    <option value="cat">Cats</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div id="all-pets-grid" class="pet-grid">
+                <p class="loading-message">Loading pets...</p>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="pet-modal">
+        <div id="modal-content">
+            </div>
+        <button id="modal-close-button" aria-label="Close dialog">Close</button>
+    </dialog>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> PetPledge Hub</p>
+        <p>Your Name Here | WDD 231 Final Project</p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p><a href="https://link-to-your-video.com" target="_blank">Project Video</a></p>
+        <div class="theme-switcher">
+            <label for="theme-toggle">Dark Mode</label>
+            <input type="checkbox" id="theme-toggle">
+        </div>
+    </footer>
+</body>
+</html>

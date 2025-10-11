@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Buddy",
+    "species": "Dog",
+    "breed": "Golden Retriever",
+    "age": "3 years",
+    "story": "Buddy was found wandering alone but is the sweetest boy you'll ever meet. He loves fetch and long naps.",
+    "imageUrl": "images/buddy.jpg",
+    "ngo": "Happy Paws Rescue"
+  },
+  {
+    "id": 2,
+    "name": "Lucy",
+    "species": "Cat",
+    "breed": "Domestic Shorthair",
+    "age": "2 years",
+    "story": "Lucy is a quiet and gentle cat who loves to curl up in a sunny spot. She's a little shy at first but very affectionate.",
+    "imageUrl": "images/lucy.jpg",
+    "ngo": "Feline Friends Foundation"
+  },
+  {
+    "id": 3,
+    "name": "Max",
+    "species": "Dog",
+    "breed": "German Shepherd",
+    "age": "5 years",
+    "story": "Max is a loyal and intelligent dog looking for a family to protect. He is well-trained and great with kids.",
+    "imageUrl": "images/max.jpg",
+    "ngo": "Canine Companions"
+  },
+  {
+    "id": 4,
+    "name": "Chloe",
+    "species": "Cat",
+    "breed": "Siamese",
+    "age": "1 year",
+    "story": "Chloe is a playful and vocal kitten who loves to chat. She's full of energy and curiosity.",
+    "imageUrl": "images/chloe.jpg",
+    "ngo": "Feline Friends Foundation"
+  },
+  {
+    "id": 5,
+    "name": "Rocky",
+    "species": "Dog",
+    "breed": "Boxer",
+    "age": "4 years",
+    "story": "Rocky is a goofy and energetic dog who loves to play. He needs an active family to keep up with him.",
+    "imageUrl": "images/rocky.jpg",
+    "ngo": "Happy Paws Rescue"
+  },
+  {
+    "id": 6,
+    "name": "Misty",
+    "species": "Cat",
+    "breed": "Persian",
+    "age": "6 years",
+    "story": "Misty is a calm and majestic cat who enjoys a peaceful home. She requires regular grooming to keep her coat beautiful.",
+    "imageUrl": "images/misty.jpg",
+    "ngo": "The Cat's Meow Shelter"
+  },
+  {
+    "id": 7,
+    "name": "Zeus",
+    "species": "Dog",
+    "breed": "Great Dane",
+    "age": "2 years",
+    "story": "Zeus is a gentle giant with a heart of gold. Despite his size, he thinks he's a lap dog.",
+    "imageUrl": "images/zeus.jpg",
+    "ngo": "Canine Companions"
+  },
+  {
+    "id": 8,
+    "name": "Oreo",
+    "species": "Cat",
+    "breed": "Tuxedo",
+    "age": "3 years",
+    "story": "Oreo is a charming and dapper cat who's always ready for a formal event or a good cuddle.",
+    "imageUrl": "images/oreo.jpg",
+    "ngo": "Feline Friends Foundation"
+  },
+  {
+    "id": 9,
+    "name": "Sadie",
+    "species": "Dog",
+    "breed": "Beagle",
+    "age": "6 years",
+    "story": "Sadie has a nose for adventure and loves to follow scents. She's looking for a family with a secure yard.",
+    "imageUrl": "images/sadie.jpg",
+    "ngo": "Happy Paws Rescue"
+  },
+  {
+    "id": 10,
+    "name": "Simba",
+    "species": "Cat",
+    "breed": "Maine Coon",
+    "age": "4 years",
+    "story": "Simba is a large, fluffy cat with a dog-like personality. He loves to follow his humans around.",
+    "imageUrl": "images/simba.jpg",
+    "ngo": "The Cat's Meow Shelter"
+  },
+  {
+    "id": 11,
+    "name": "Toby",
+    "species": "Dog",
+    "breed": "Corgi",
+    "age": "1 year",
+    "story": "Toby is a bundle of joy with short legs and a big personality. He loves to learn new tricks.",
+    "imageUrl": "images/toby.jpg",
+    "ngo": "Canine Companions"
+  },
+  {
+    "id": 12,
+    "name": "Nala",
+    "species": "Cat",
+    "breed": "Calico",
+    "age": "2 years",
+    "story": "Nala is a sweet and independent cat with a beautiful multi-colored coat. She enjoys both playtime and her alone time.",
+    "imageUrl": "images/nala.jpg",
+    "ngo": "Feline Friends Foundation"
+  },
+  {
+    "id": 13,
+    "name": "Duke",
+    "species": "Dog",
+    "breed": "Labrador",
+    "age": "7 years",
+    "story": "Duke is a senior dog who is calm, wise, and incredibly loving. He's looking for a comfortable home to spend his golden years.",
+    "imageUrl": "images/duke.jpg",
+    "ngo": "Happy Paws Rescue"
+  },
+  {
+    "id": 14,
+    "name": "Jasper",
+    "species": "Other",
+    "breed": "Rabbit",
+    "age": "2 years",
+    "story": "Jasper is a curious and litter-trained rabbit who enjoys hopping around a safe space and munching on carrots.",
+    "imageUrl": "images/jasper.jpg",
+    "ngo": "Small Critter Sanctuary"
+  },
+  {
+    "id": 15,
+    "name": "Ruby",
+    "species": "Dog",
+    "breed": "Poodle",
+    "age": "3 years",
+    "story": "Ruby is a smart and elegant poodle who loves to be pampered. She is hypoallergenic and great for families with allergies.",
+    "imageUrl": "images/ruby.jpg",
+    "ngo": "Canine Companions"
+  }
+]
