@@ -1,0 +1,52 @@
+{
+  "attractions": [
+    {
+      "name": "Marco Zero Square",
+      "address": "Praça Rio Branco, Recife Antigo",
+      "description": "The historic starting point of the city, offering stunning waterfront views and a vibrant atmosphere.",
+      "image": "images/marco-zero.webp"
+    },
+    {
+      "name": "Rua do Bom Jesus",
+      "address": "Rua do Bom Jesus, Recife Antigo",
+      "description": "Voted one of the most beautiful streets in the world, famous for its colorful colonial architecture.",
+      "image": "images/bom-jesus.webp"
+    },
+    {
+      "name": "Instituto Ricardo Brennand",
+      "address": "Alameda Antônio Brennand, Várzea",
+      "description": "A cultural institute featuring a stunning collection of art, armor, and a beautiful castle-like structure.",
+      "image": "images/brennand.webp"
+    },
+    {
+      "name": "Oficina Cerâmica Francisco Brennand",
+      "address": "Av. Caxangá, Várzea",
+      "description": "A unique ceramic workshop and open-air museum created by the visionary artist Francisco Brennand.",
+      "image": "images/oficina.webp"
+    },
+    {
+      "name": "Paço do Frevo",
+      "address": "Praça do Arsenal da Marinha, Recife Antigo",
+      "description": "A cultural center dedicated to celebrating and preserving Frevo, Pernambuco's iconic music and dance.",
+      "image": "images/frevo.webp"
+    },
+    {
+      "name": "Boa Viagem Beach",
+      "address": "Av. Boa Viagem, Boa Viagem",
+      "description": "Recife's main urban beach, protected by a line of reefs that form natural swimming pools at low tide.",
+      "image": "images/boa-viagem.webp"
+    },
+    {
+      "name": "Catamaran Tours",
+      "address": "Cais das Cinco Pontas, São José",
+      "description": "Explore Recife's rivers and bridges, the 'Brazilian Venice', with a relaxing and informative boat tour.",
+      "image": "images/catamaran.webp"
+    },
+    {
+      "name": "Mercado de São José",
+      "address": "Praça Dom Vital, São José",
+      "description": "A historic iron market from the 19th century offering a wide variety of local crafts, foods, and herbs.",
+      "image": "images/mercado.webp"
+    }
+  ]
+}

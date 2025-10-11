@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Recife | Recife Chamber of Commerce</title>
+    <meta name="description" content="Discover the top attractions, historic sites, and cultural landmarks in Recife, Brazil. Plan your visit with the Chamber of Commerce.">
+    <meta name="author" content="Lucas Miranda">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Discover Recife with the Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lucas-lab2.github.io/wdd231/chamber/images/hero-social.webp">
+    <meta property="og:url" content="https://lucas-lab2.github.io/wdd231/chamber/discover.html">
+    <meta property="og:description" content="Explore Recife's vibrant culture, from historic streets to beautiful beaches. Find attractions and plan your trip.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.webp" alt="Recife Chamber Logo" class="logo">
+            <div class="site-name">Recife Chamber of Commerce</div>
+            <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-main">
+        <h1>Discover Recife</h1>
+        <div class="visit-message">
+            <p id="visitor-message"></p>
+        </div>
+
+        <div class="discover-grid" id="attractions-grid">
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> | Lucas Miranda | WDD 231</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+</html>
