@@ -30,8 +30,8 @@ const renderPets = (pets, containerId) => {
         petCard.className = 'pet-card';
         petCard.dataset.petId = pet.id;
         
-        // Apply lazy loading only to images after the first few that are visible on load
-        const lazyLoadAttribute = index > 3 ? 'loading="lazy"' : '';
+        // This is the key fix: Only lazy load images after the first row (index 2 for a 3-column grid).
+        const lazyLoadAttribute = index > 2 ? 'loading="lazy"' : '';
 
         petCard.innerHTML = `
             <img src="${pet.imageUrl}" alt="A photo of ${pet.name}, a ${pet.breed}" ${lazyLoadAttribute}>
@@ -50,15 +50,16 @@ const renderPets = (pets, containerId) => {
 export const loadPets = async (featuredOnly = false) => {
     const pets = await getPetsData();
     if (featuredOnly) {
-        // Featured pets are always above the fold, so they should not be lazy-loaded.
+        // Featured pets on the homepage are always visible first and should NOT be lazy-loaded.
         const featuredPets = pets.slice(0, 3);
         const container = document.getElementById('featured-pets-grid');
         if (!container) return;
         container.innerHTML = '';
         featuredPets.forEach(pet => {
-            const petCard = document.createElement('div');
+             const petCard = document.createElement('div');
             petCard.className = 'pet-card';
             petCard.dataset.petId = pet.id;
+            // No loading="lazy" attribute here
             petCard.innerHTML = `
                 <img src="${pet.imageUrl}" alt="A photo of ${pet.name}, a ${pet.breed}">
                 <div class="pet-card-info">
@@ -72,6 +73,7 @@ export const loadPets = async (featuredOnly = false) => {
         });
         addCardEventListeners();
     } else {
+        // This calls the corrected renderPets function for the main pets page
         renderPets(pets, 'all-pets-grid');
     }
 };
@@ -90,6 +92,7 @@ const closeModalButton = document.getElementById('modal-close-button');
 const openModal = (petId) => {
     const pet = allPetsData.find(p => p.id == petId);
     if (!pet || !modal) return;
+    // Images in the modal load on-demand, so no lazy loading is needed here either.
     modalContent.innerHTML = `
         <img src="${pet.imageUrl}" alt="A photo of ${pet.name}, a ${pet.breed}">
         <div>
