@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inquiry Received - PetPledge Hub</title>
+    
+    <!-- Corrected Favicon Links -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
     <link rel="stylesheet" href="styles/base.css">
     <style>
-        body { padding: 2rem; }
-        .receipt { max-width: 600px; margin: 2rem auto; border: 1px solid #ccc; padding: 2rem; }
+        body { padding: 2rem; font-family: var(--body-font); color: var(--text-color); background-color: var(--bg-color); }
+        .receipt { max-width: 600px; margin: 2rem auto; border: 1px solid var(--border-color); padding: 2rem; background-color: var(--surface-color); border-radius: 8px; }
+        h1 { color: var(--primary-color); }
+        a { color: var(--accent-color); }
+        pre { white-space: pre-wrap; word-wrap: break-word; }
     </style>
 </head>
 <body>
@@ -25,7 +36,7 @@
             const output = document.getElementById('form-data');
             let data = '';
             for (const [key, value] of params.entries()) {
-                data += `${key}: ${value}\n`;
+                data += `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}\n`;
             }
             output.textContent = data;
         });
