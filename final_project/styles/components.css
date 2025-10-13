@@ -1,5 +1,6 @@
+/* Hamburger Menu Button */
 #menu-button {
-    display: block;
+    display: block; /* Visible by default on mobile */
     background: none; border: none;
     width: 30px; height: 30px;
     cursor: pointer;
@@ -13,6 +14,8 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230077b6'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
     transform: rotate(90deg);
 }
+
+/* Dark Mode Icon Button */
 #theme-toggle-button {
     background: none; border: none; cursor: pointer;
     width: 24px; height: 24px;
@@ -23,6 +26,8 @@
     width: 100%; height: 100%;
     fill: currentColor;
 }
+
+/* Call-to-Action Button */
 .cta-button {
     display: inline-block;
     background-color: var(--accent-color); color: #fff;
@@ -31,6 +36,8 @@
     margin-top: 1rem; border: none; cursor: pointer;
 }
 .cta-button:hover { opacity: 0.9; }
+
+/* Pet Card Styling */
 .pet-card {
     background-color: var(--surface-color); border-radius: 8px;
     box-shadow: var(--shadow); overflow: hidden;
@@ -40,6 +47,8 @@
 .pet-card img { width: 100%; height: 250px; object-fit: cover; }
 .pet-card-info { padding: 1rem; text-align: left; }
 .pet-card-info h3 { margin-bottom: 0.5rem; }
+
+/* Modal Dialog */
 #pet-modal {
     width: 90%; max-width: 600px;
     border: 1px solid var(--border-color); border-radius: 8px;
@@ -54,6 +63,8 @@
     background: none; border: none;
     font-size: 1.5rem; cursor: pointer;
 }
+
+/* Form Styling */
 .form-container {
     max-width: 700px; margin: 2rem auto;
     background-color: var(--surface-color); padding: 2rem;
@@ -71,3 +82,11 @@ form textarea {
     color: var(--text-color);
 }
 .filter-controls { margin-bottom: 2rem; text-align: center; }
+
+/* THIS IS THE FIX: Added styles for the loading-message class */
+.loading-message {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+    color: var(--text-color);
+}
