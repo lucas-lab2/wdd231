@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet the Pets - PetPledge Hub</title>
-    <meta name="description" content="Browse profiles of all adoptable and supportable pets. Filter by species and find a friend to support today.">
+    <title>PetPledge Hub: Donate to Pets in Need</title>
+    <meta name="description" content="Welcome to PetPledge Hub, the central platform for donating to abandoned pets and supporting non-profit animal welfare organizations.">
     <meta name="author" content="Lucas Miranda">
-    <meta property="og:title" content="Meet the Pets - PetPledge Hub">
+    <meta property="og:title" content="PetPledge Hub: Donate to Pets in Need">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Browse profiles of all adoptable and supportable pets. Filter by species and find a friend to support today.">
+    <meta property="og:description" content="Support abandoned pets through direct donations of funds and supplies. See the impact of your contribution.">
     <meta property="og:image" content="https://YOUR-GITHUB-USERNAME.github.io/wdd231/finalproject/images/og-image.jpg">
     <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/wdd231/finalproject/">
 
-    <!-- Corrected Favicon Links -->
-    <link rel="icon" href="favicon.ico" sizes="any">
+    <!-- Final, Corrected Favicon Links -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="images/favicon-32x32.png">
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -30,8 +32,8 @@
         </a>
         <div class="header-controls">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="pets.html" class="active">Pets</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="pets.html">Pets</a>
                 <a href="donate.html">Donate</a>
             </nav>
             <button id="theme-toggle-button" aria-label="Toggle Dark Mode"></button>
@@ -40,30 +42,26 @@
     </header>
 
     <main>
-        <section class="page-intro">
-            <h1>Find Your Friend</h1>
-            <p>Here are all the wonderful animals currently seeking support. Click on any pet to learn more about their story.</p>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Give a Paw, Change a Life</h1>
+                <p>Your contribution provides food, shelter, and medical care to animals in need. Make a difference today.</p>
+                <a href="pets.html" class="cta-button">Meet the Pets</a>
+            </div>
         </section>
-        <div id="pet-gallery">
-            <div class="filter-controls">
-                <label for="filter">Filter by:</label>
-                <select id="filter" name="filter">
-                    <option value="all">All Pets</option>
-                    <option value="dog">Dogs</option>
-                    <option value="cat">Cats</option>
-                    <option value="other">Other</option>
-                </select>
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step"><h3>1. Find a Friend</h3><p>Browse profiles of adorable pets from various shelters who are waiting for your support.</p></div>
+                <div class="step"><h3>2. Pledge Your Support</h3><p>Choose to donate funds securely or contribute essential supplies from their wishlist.</p></div>
+                <div class="step"><h3>3. See Your Impact</h3><p>Receive updates and see exactly how your generosity helps them thrive.</p></div>
             </div>
-            <div id="all-pets-grid" class="pet-grid">
-                <p class="loading-message">Loading pets...</p>
-            </div>
-        </div>
+        </section>
+        <section class="featured-pets">
+            <h2>Featured Friends</h2>
+            <div id="featured-pets-grid" class="pet-grid"></div>
+        </section>
     </main>
-
-    <dialog id="pet-modal">
-        <div id="modal-content"></div>
-        <button id="modal-close-button" aria-label="Close dialog">Close</button>
-    </dialog>
 
     <footer>
         <p>&copy;<span id="current-year"></span> PetPledge Hub</p>
